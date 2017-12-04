@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cre8tivedevs.quizit.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="text"
+        android:hint="Name"/>
+
+    <TextView
+        android:id="@+id/toppings"
+        style="@style/HeaderTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess Skips Favorite Animal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/mermaid"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Mermaid" />
+
+        <CheckBox
+            android:id="@+id/dragon"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="Dragon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/unicornCheckbox"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Unicorn" />
+
+        <CheckBox
+            android:id="@+id/merman"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Merman" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/favColor"
+        style="@style/HeaderTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess Skips Favorite Color" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Red" />
+
+        <RadioButton
+            android:id="@+id/pink"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="Pink" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/blue"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Blue" />
+
+        <RadioButton
+            android:id="@+id/mix"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Mix" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/favSeason"
+        style="@style/HeaderTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guess Skips Favorite Season" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/fall"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Fall" />
+
+        <CheckBox
+            android:id="@+id/winter"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="Winter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/spring"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Spring" />
+
+        <CheckBox
+            android:id="@+id/summer"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:text="Summer" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Any Favorite Food"
+        style="@style/HeaderTextStyle"/>
+
+
+    <EditText
+        android:id="@+id/favFood"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:hint=" Favorite Food " />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Score" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/submitScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitOrder"
+        android:text="Submit Answer" />
+
+
+</android.widget.LinearLayout>
